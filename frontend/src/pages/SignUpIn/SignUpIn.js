@@ -3,7 +3,7 @@ import "./SignUpIn.css";
 import logo from "../../assets/images/logo.svg";
 import register from "../../assets/images/register.svg";
 // import { firebaseApp } from "../../firebase";
-// import { Redirect, useHistory } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function SignUpIn({ user, setUser }) {
   const [email, setEmail] = useState("");
@@ -77,10 +77,8 @@ function SignUpIn({ user, setUser }) {
   };
 
   return false ? (
-    // <Redirect to="/home" />
-    <div>
-
-    </div>
+    <Navigate to="/home" />
+   
   ) : (
     <div>
       <body>
