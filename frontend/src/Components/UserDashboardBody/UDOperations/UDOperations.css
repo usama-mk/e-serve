@@ -1,0 +1,11 @@
+.UDOButton{
+    padding: 10px 60px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.UDOperations{
+    max-width: 70vw;
+    margin-top: 20px;
+}

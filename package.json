@@ -36,10 +36,15 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
     "nunjucks": "^3.2.3",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.1.0",
     "stripe": "^8.176.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
     "concurrently": "^5.3.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.1"
   }
 }

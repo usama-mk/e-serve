@@ -1,0 +1,29 @@
+.PPDetails{
+    margin-left: 20px;
+}
+
+.PPOperationsButton{
+    padding: 10px 20px;
+    color: grey;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin: 20px;
+}
+
+.PPName{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.PostPreview{
+    padding: 20px;
+    width: 70%;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+}
+
+.PPImage>img{
+    max-width: 400px;
+    border-radius: 50%;
+    width: 100px;
+}

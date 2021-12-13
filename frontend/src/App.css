@@ -25,3 +25,6 @@
 .row{
     flex-direction: row;
 }
+.sa{
+    justify-content: space-around;
+}

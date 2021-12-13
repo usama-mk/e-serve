@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './PersonalInfo.css'
+import {FaUserEdit} from 'react-icons/fa'
 
 function PersonalInfo() {
     const [name, setName]= useState("Usama")
@@ -9,11 +10,11 @@ function PersonalInfo() {
     return (
         <div className='PersonalInfo shadow-tail'>
             <div className="PIHeader flex sb">
-                <div className="PIHText">
+                <div className="PIHText PICsHeader">
                     Personal Information
                 </div>
                 <div className="PIEdit">
-                    edit icon
+                   <FaUserEdit color='blue' size={30} />
                 </div>
             </div>
 

@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { IoMdAddCircleOutline } from 'react-icons/io'
 
-function RentedItems() {
-    const [itemsRented, setitemsRented]= useState(2)
+function Giveaways() {
+    const [giveaways, setGiveaways]= useState(2)
     const [isitemsRented, setIsItemsRented]= useState(false)
     return (
         <div className='profileInfoCards'>
             <div className="flex sb">
                 <div className="PICsHeader">
-                   Rented Items 
+                Number of Giveaways 
                 </div>
                 <div onClick={()=> setIsItemsRented(!isitemsRented)} className="pointer">
                 <IoMdAddCircleOutline color='blue' size={30} />
@@ -18,10 +18,10 @@ function RentedItems() {
             <div className="PICInput">
                {
                    isitemsRented?
-                   <input type="number" value={itemsRented} onChange={(e)=> setitemsRented(e.target.value)} />
+                   <input type="number" value={giveaways} onChange={(e)=> setGiveaways(e.target.value)} />
                    :
                    <div className="PICsDetails">
-                     {itemsRented + " Items Rented"}
+                     {giveaways + " Items given away for free"}
                    </div>
                }
             </div>
@@ -29,4 +29,4 @@ function RentedItems() {
     )
 }
 
-export default RentedItems
+export default Giveaways

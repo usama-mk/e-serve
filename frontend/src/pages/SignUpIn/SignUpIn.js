@@ -8,6 +8,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 function SignUpIn({ user, setUser }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [cnic, setCnic] = useState("");
+  const [contact, setContact] = useState("");
+  const [address, setAddress] = useState("");
+  const [country, setCountry] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 //   const history = useHistory();
@@ -21,61 +25,17 @@ function SignUpIn({ user, setUser }) {
     container.classList.remove("sign-up-mode");
   };
   const handleLogout = () => {
-    // firebaseApp.auth().signOut();
+  
   };
   const handleLogin = (e) => {
-    // e.preventDefault();
-    // console.log(email);
-    // console.log(password);
-    // firebaseApp
-    //   .auth()
-    //   .signInWithEmailAndPassword(email, password)
-    //   .then((user) => {
-    //     console.log(user);
-      
-    //     setUser(user);
-    //     if (user) {
-    //       console.log("success login");
-    //       history.push("./home");
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     switch (error.code) {
-    //       case "auth/invalid-email":
-    //       case "auth/user-disabled":
-    //       case "auth/user-not-found":
-    //         setEmailError(error.message);
-    //         console.log("error");
-    //         break;
-    //       case "auth/wrong-password":
-    //         setPasswordError(error.message);
-    //         console.log("error");
-    //         break;
-    //     }
-    //   });
-    // console.log(`user is: ${user}`);
+    
   };
 
   const handleSignup = (e) => {
-    // e.preventDefault();
-    // firebaseApp
-    //   .auth()
-    //   .createUserWithEmailAndPassword(email, password)
-    //   .then((user) => {
-    //     console.log(user);
-    //     console.log("success signup");
-    //     console.log(user.email);
-    //     history.push("./home");
-    //   })
-    //   .catch(function (error) {
-    //     // Handle Errors here.
-    //     var errorCode = error.code;
-    //     var errorMessage = error.message;
-    //     console.log(errorMessage);
-    //     // ...
-    //   });
+     
   };
 
+  // if user is true/false
   return false ? (
     <Navigate to="/home" />
    
@@ -113,6 +73,7 @@ function SignUpIn({ user, setUser }) {
                 />
                 {user && <div onClick={handleLogout}> Logout</div>}
               </form>
+              {/* sign up form */}
               <form action="#" className="sign-up-form">
                 <h2 className="title">Sign up</h2>
                 <div className="input-field">
@@ -140,9 +101,9 @@ function SignUpIn({ user, setUser }) {
                 <div className="input-field">
                   <i className="fas fa-envelope"></i>
                   <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="text"
+                    value={cnic}
+                    onChange={(e) => setCnic(e.target.value)}
                     placeholder="CNIC"
                   />
                 </div>
@@ -150,9 +111,9 @@ function SignUpIn({ user, setUser }) {
                 <div className="input-field">
                   <i className="fas fa-envelope"></i>
                   <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="number"
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
                     placeholder="Contact"
                   />
                 </div>
@@ -160,9 +121,9 @@ function SignUpIn({ user, setUser }) {
                 <div className="input-field">
                   <i className="fas fa-envelope"></i>
                   <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="text"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
                     placeholder="Address"
                   />
                 </div>
@@ -170,9 +131,9 @@ function SignUpIn({ user, setUser }) {
                 <div className="input-field">
                   <i className="fas fa-envelope"></i>
                   <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="text"
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
                     placeholder="Country"
                   />
                 </div>
@@ -191,7 +152,7 @@ function SignUpIn({ user, setUser }) {
           <div className="panels-container">
             <div className="panel left-panel">
               <div className="content">
-                <h3>New here ?</h3>
+                <h3>New to E-Serve ?</h3>
                 <p>
                   Sign up Now! And enjoy the quality services through our web
                   app
@@ -208,7 +169,7 @@ function SignUpIn({ user, setUser }) {
             </div>
             <div className="panel right-panel">
               <div className="content">
-                <h3>One of us ?</h3>
+                <h3>One of E-Serve Member ?</h3>
                 <p>
                   Sign in Now! And enjoy the quality services through our web
                   app

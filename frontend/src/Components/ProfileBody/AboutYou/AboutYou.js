@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {IoMdAddCircleOutline} from 'react-icons/io'
 import './AboutYou.css'
 
 function AboutYou() {
@@ -10,8 +11,8 @@ function AboutYou() {
                 <div className="AYHText PICsHeader">
                     About You
                 </div>
-                <div onClick={()=> setIsAboutYou(!isAboutYou)} className="AYHAdd">
-                    Add
+                <div onClick={()=> setIsAboutYou(!isAboutYou)} className="AYHAdd pointer">
+                  <IoMdAddCircleOutline color='blue' size={30} />
                 </div>
             </div>
 

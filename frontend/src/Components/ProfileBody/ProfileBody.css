@@ -15,3 +15,13 @@
     color: grey;
     margin-top: 10px;
 }
+
+.rentAnyBtn{
+    background-color: blue;
+    padding: 10px 80px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
